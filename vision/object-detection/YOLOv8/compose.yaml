@@ -1,0 +1,19 @@
+services:
+  app-yolo-live:
+    #image: ghcr.io/amperecomputingai/yolo-live-demo:1.4.0.2-yolov8-detect
+    image: ampere-ai-ref-apps:1.0
+    ipc: host
+    privileged: true
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+    environment:
+      GRADIO_SERVER_NAME: ${GRADIO_SERVER_NAME:-0.0.0.0}
+      GRADIO_SERVER_PORT: ${GRADIO_SERVER_PORT:-5000}
+      HOST_PORT: ${HOST_PORT:-5000}
+      NSTREAMS: ${NSTREAMS:-1}
+      NTHREADS: ${NTHREADS:-16}
+      VIDEO_SRC: ${VIDEO_SRC:-''}
+      WEBCAM0_SRC: ${WEBCAM0_SRC:-0}
+      WEBCAM1_SRC: ${WEBCAM1_SRC:-2}
+    ports:
+      - "${HOST_PORT}:${GRADIO_SERVER_PORT:-5000}"
