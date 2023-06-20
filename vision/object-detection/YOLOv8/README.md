@@ -2,9 +2,9 @@
 
 YOLOv8 is a state-of-the-art model that improves upon previous YOLO versions by introducing new features.  It's fast, accurate, and easy to use, making it ideal for object detection and tracking, instance segmentation, image classification and pose estimation tasks.
 
-This demo for Ampere Altra/Max systems runs YOLOv8 object detection and classification ML inference using provided source video and outputs it to your browser at a frames rate matching source video, with bounding boxes showing classification confidence and inference latency in milliseconds.
+This demo for Ampere Altra/Max systems runs YOLOv8 object detection and classification ML inference using provided source video and outputs it to your browser at a frame rate matching source video, with bounding boxes showing classification confidence.
 
-# <add gif>
+![Ampere-Paris-YOLOv8](https://raw.githubusercontent.com/AmpereComputingAI/images/master/ampere-paris-yolov8.gif)
 
 ## Download the demo repository
 ```shell
