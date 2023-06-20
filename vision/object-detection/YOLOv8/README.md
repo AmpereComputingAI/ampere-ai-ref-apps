@@ -4,7 +4,7 @@ YOLOv8 is a state-of-the-art model that improves upon previous YOLO versions by 
 
 This demo for Ampere Altra/Max systems runs YOLOv8 object detection and classification ML inference using provided source video and outputs it to your browser at a frame rate matching source video, with bounding boxes showing classification confidence.
 
-![Ampere-Paris-YOLOv8](https://raw.githubusercontent.com/AmpereComputingAI/images/master/ampere-paris-yolov8.gif)
+<h1 align="center"><img src="https://raw.githubusercontent.com/AmpereComputingAI/images/master/ampere-paris-yolov8.gif" alt="animated" /></p>
 
 ## Download the demo repository
 ```shell
