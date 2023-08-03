@@ -1,0 +1,15 @@
+services:
+  app-whisper:
+    image: ampere-ai-ref-apps:whisper-0.1
+    ipc: host
+    privileged: true
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+    environment:
+      GRADIO_SERVER_NAME: ${GRADIO_SERVER_NAME:-0.0.0.0}
+      GRADIO_SERVER_PORT: ${GRADIO_SERVER_PORT:-5001}
+      HOST_PORT: ${HOST_PORT:-5001}
+      NSTREAMS: ${NSTREAMS:-1}
+      NTHREADS: ${NTHREADS:-16}
+    ports:
+      - "${HOST_PORT}:${GRADIO_SERVER_PORT:-5001}"
