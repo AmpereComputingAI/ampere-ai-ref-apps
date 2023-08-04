@@ -1,6 +1,6 @@
 services:
   app-whisper:
-    image: ghcr.io/amperecomputingai/ampere-ai-ref-apps:whisper-0.1
+    image: ghcr.io/amperecomputingai/ampere-ai-ref-apps:whisper-0.2
     ipc: host
     privileged: true
     volumes:
