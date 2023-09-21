@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export CONFIG_FILE="cfg/config.yaml"
 export GRADIO_SERVER_NAME="0.0.0.0"
 export GRADIO_SERVER_PORT=5001
 export NSTREAMS=1
