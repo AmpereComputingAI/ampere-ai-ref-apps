@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cont_name="cont-1"
+cont_name="whisper-video"
 docker compose -p $cont_name down

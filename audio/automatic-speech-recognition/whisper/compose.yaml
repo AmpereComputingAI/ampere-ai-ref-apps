@@ -1,6 +1,6 @@
 services:
   app-whisper:
-    image: ghcr.io/amperecomputingai/ampere-ai-ref-apps:whisper-0.3.6
+    image: ghcr.io/amperecomputingai/ampere-ai-ref-apps:whisper-0.3.10rc1
     ipc: host
     privileged: true
     volumes:
@@ -13,5 +13,6 @@ services:
       INSTANCE_NAME: ${INSTANCE_NAME:-'AltraMax'}
       NSTREAMS: ${NSTREAMS:-1}
       NTHREADS: ${NTHREADS:-16}
+      AIO_NUM_THREADS: ${AIO_NUM_THREADS:-64}
     ports:
       - "${HOST_PORT}:${GRADIO_SERVER_PORT:-5001}"
